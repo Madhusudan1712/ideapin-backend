@@ -1,5 +1,5 @@
 {
-  "name": "notepin-backend",
+  "name": "ideapin-backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,16 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Madhusudan1712/notepin-backend.git"
+    "url": "git+https://github.com/Madhusudan1712/ideapin-backend.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/Madhusudan1712/notepin-backend/issues"
+    "url": "https://github.com/Madhusudan1712/ideapin-backend/issues"
   },
-  "homepage": "https://github.com/Madhusudan1712/notepin-backend#readme",
+  "homepage": "https://github.com/Madhusudan1712/ideapin-backend#readme",
   "dependencies": {
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",

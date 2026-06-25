@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-    res.send("Notepin API running");
+    res.send("ideapin API running");
 });
 
 export default app;
