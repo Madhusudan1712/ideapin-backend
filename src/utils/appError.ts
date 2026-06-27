@@ -18,3 +18,15 @@ export class UnauthorizedError extends AppError {
     super(message, 401, 'UNAUTHORIZED');
   }
 }
+
+export class NotFoundError extends AppError {
+  constructor(message: string = 'Resource not found') {
+    super(message, 404, 'NOT_FOUND');
+  }
+}
+
+export class ForbiddenError extends AppError {
+  constructor(message: string = 'Action forbidden') {
+    super(message, 403, 'FORBIDDEN');
+  }
+}
