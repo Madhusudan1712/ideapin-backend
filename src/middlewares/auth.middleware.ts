@@ -17,7 +17,7 @@ const getKey = (header: jwt.JwtHeader, callback: jwt.SigningKeyCallback) => {
   if (!header.kid) {
     return callback(new Error('No kid in token header'));
   }
-  client.getSigningKey(header.kid, (err, key) => {
+  client.getSigningKey(header.kid, (err: Error | null, key: any) => {
     if (err) {
       callback(err);
     } else {
