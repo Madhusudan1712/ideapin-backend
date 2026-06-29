@@ -5,6 +5,7 @@ import swaggerUi from 'swagger-ui-express';
 import yaml from 'yamljs';
 import authRoutes from './routes/auth.routes';
 import noteRoutes from './routes/note.routes';
+import syncRoutes from './routes/sync.routes';
 import { errorHandler } from './middlewares/errorHandler';
 
 const app = express();
@@ -20,6 +21,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/notes', noteRoutes);
+app.use('/api/sync', syncRoutes);
 
 app.get("/", (req, res) => {
     res.send("ideapin API running");
